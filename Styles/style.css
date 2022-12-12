@@ -1,0 +1,247 @@
+:root {
+    /* change the values below to your colors from your palette */
+    --primary-color: #4C4C9D  ;
+    --secondary-color: #72A98F;
+    --accent1-color: #712F79;
+    --accent2-color: #F2BB05;
+  
+    /* change the values below to your chosen font(s) */
+    --heading-font: "Roboto";
+    --paragraph-font: Exo+2, Helvetica, sans-serif;
+  
+    /* these colors below should be chosen from among your palette colors above */
+    --headline-color-on-white: #46494C;  /* headlines on a white background */ 
+    --headline-color-on-color: #dcdcdd; /* headlines on a colored background */ 
+    --paragraph-color-on-white: black; /* paragraph text on a white background */ 
+    --paragraph-color-on-color: #dcdcdd; /* paragraph text on a colored background */ 
+    --paragraph-background-color: #4C5C68  ;
+    --nav-link-color: #F2BB05;
+    --nav-background-color: #72A98F;
+    --nav-hover-link-color: #F2BB05;
+    --nav-hover-background-color: #712F79;
+  }
+  
+body {
+    background-color: var(--primary-color);
+}
+header {
+    height: 69px;
+}
+
+.logo {
+    float: left;
+    width: 200px;
+}
+
+.logo_top {
+    height: 100%;
+    width: 100%;
+}
+
+.topnav {
+    text-align: center;
+    background-color: var(--accent1-color);
+    height: 70.95px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: var(--accent2-color);
+    text-align: center;
+    padding: 25px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: var(--nav-background-color);
+    color: var(--accent2-color);
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+
+    background-color: var(--nav-background-color );
+    color: var(--accent2-color);
+  }
+
+  .hicon {
+    display: none;
+  }
+
+  body {
+    font-family: Arial;
+    margin: 0;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  img {
+    text-align: center;
+    vertical-align: middle;
+  }
+  .img1 {
+    text-align: center;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: var(--accent2-color);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+/* This is the about me page */
+.about-me {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.pers-pic{
+    height: 250px;
+    width: 175px;
+    grid-column: 2/4;
+}
+.pers-pic img{
+    height: 100%;
+    width: 100%;
+    
+}
+
+.family{
+    height: 250px;
+    width: 175px;
+    grid-column: 3/5;
+    grid-row: 2;
+}
+.family img{
+    height: 100%;
+    width: 100%;
+}
+
+.aboutme-p {
+    grid-column: 7/9;
+    color: white;
+}
+
+.resume {
+    grid-column: 7/9;
+    grid-row: 2/3;
+    color: white;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}

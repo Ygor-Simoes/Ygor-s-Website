@@ -1,26 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="test_style.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <div class="topnav">
-            <a class="active" href="index.html">Home</a>
-            <a href="aboutme.html">About Me</a>
-            <a href="site-plan.html">Site Plan</a>
-            <a href="thanks.html">Credits</a>
-        </div>
-    </header>
-    <img src="#" alt="#">
 
-    <footer>
-        <p>&copy; [your website name] - 2022</p>
-        <a href="site-plan.html">Site Plan</a>
-    </footer>
+<head>
+  <link rel="stylesheet" href="./Styles/style.css">
+  <script type="text/javascript" src="./scripts/slides.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img class="logo_top" src="images_for_personal\logo1.png" alt="logo image">
+      </a>
+    </div>
+    <div class="topnav" id="myTopnav">
+      <a class="active" href="index.html">Home</a>
+      <a href="aboutme.html">About Me</a>
+      <a href="contact_me.html">Contact Me</a>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img class="img1" src="./images_for_personal/about_me.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="./images_for_personal/my city.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="images_for_personal\wireframe_display_1.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img href='contact_me.html' src="./images_for_personal/contact_me_pic.jpg" style="width:100%" alt="link img">
+    </div>
+
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="./images_for_personal/about_me1.png" style="width:100%" onclick="currentSlide(1)"
+        alt="About Me">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./images_for_personal/my_city_1.jpg" style="width:100%" onclick="currentSlide(2)"
+        alt="My City">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images_for_personal\wireframe_display_1.png" style="width:100%"
+        onclick="currentSlide(3)" alt="Wireframes">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images_for_personal/contact_me_pic.jpg" style="width:100%" onclick="currentSlide(4)"
+        alt="Contact Me">
+    </div>
+  </div>
+  </div>
+  <footer class="topnav">
+    <p>&copy; Ygor Simoes 2022</p>
+    <a href="site-plan.html">Site Plan</a>
+  </footer>
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+  </script>
+
 </body>
+
 </html>

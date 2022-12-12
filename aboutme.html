@@ -1,21 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="test_style.css">
+    <link rel="stylesheet" href="./Styles/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <header>
-        <div class="topnav">
+        <div class="logo">
+            <a href="index.html">
+                <img class="logo_top" src="images_for_personal\logo1.png" alt="logo image">
+            </a>
+        </div>
+
+        <div class="topnav" id="myTopnav">
             <a href="index.html">Home</a>
             <a class="active" href="aboutme.html">About Me</a>
-            <a href="site-plan.html">Site Plan</a>
-            <a href="thanks.html">Credits</a>
+            <a href="contact_me.html">Contact Me</a>
+            <a href="javascript:void(0)" class="hicon" onclick="myfunction()">#9776;</a>
         </div>
     </header>
-    
+    <h1 class="page_content">About Me</h1>
+    <main class="about-me">
+        <div class="pers-pic">
+            <img src="./images_for_personal/me_picture.jpg" alt="picture of Ygor">
+        </div>
+        <div class="family">
+            <img src="./images_for_personal/my_family.jpg" alt="picture of Ygor's family">
+        </div>
+        <p class="aboutme-p">My name is Ygor Simoes, I'm 23 years old and I'm from Brazil. I'm studying the computer
+            science major here at BYU-i with completion scheduled for 2026. I have knowledge in Python and HTML, I'm
+            always looking to develop my skills in these two areas.</p>
+        <a class="resume" href="images_for_personal\Ygor's Resume.pdf" download>Link to download Resume</a>
+    </main>
+    <footer class="topnav">
+        <p>&copy; Ygor Simoes 2022</p>
+        <a href="site-plan.html">Site Plan</a>
+    </footer>
 </body>
+
 </html>
